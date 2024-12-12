@@ -5,7 +5,7 @@ function M.setup(opts)
 
   local client = vim.lsp.start_client {
     name = 'nugetlsp',
-    cmd = { 'node', '/home/katlego/source/nugetlsp/dist/index.js', '--stdio' },
+    cmd = { 'nugetlsp', '--stdio' },
   }
 
   if not client then
